@@ -1,0 +1,7 @@
+---
+# setup ssh on windows
+- hosts: windows
+  vars_files:
+    - ./ssh_var.yml
+  roles:
+    - win_service_config
